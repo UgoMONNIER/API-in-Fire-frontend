@@ -326,7 +326,7 @@ const TERMINAL_CSS = `
   .t-metric-sub { font-size: 13px; color: #ffffff; margin-top: 6px; font-weight: 600; opacity: 0.7; }
 
   .t-section-title {
-    font-size: 13px; font-weight: 700; color: #ffffff;
+    font-size: 16px; font-weight: 700; color: #ffffff;
     text-transform: uppercase; letter-spacing: 2px;
     font-family: 'JetBrains Mono', monospace;
     margin-bottom: 14px; display: flex; align-items: center; gap: 8px;
@@ -363,7 +363,7 @@ const TERMINAL_CSS = `
   .t-resp-btn {
     padding: 14px; background: #112240; border: 2px solid #1d4ed8;
     border-radius: 8px; color: #ffffff; font-family: 'Inter', sans-serif;
-    font-size: 13px; cursor: pointer; text-align: left; transition: all 0.15s;
+    font-size: 16px; cursor: pointer; text-align: left; transition: all 0.15s;
   }
   .t-resp-btn:hover { background: #1e3a8a; border-color: #60a5fa; }
   .t-resp-btn.selected { background: #0d3d30; border: 3px solid #00b4a0; color: #ffffff; }
@@ -434,7 +434,7 @@ const TERMINAL_CSS = `
   .t-info-row span:last-child { font-weight: 700; color: #00e5cc; }
 
   .t-crit-warning { background: #450a0a; border: 2px solid #ef4444; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; font-size: 15px; font-weight: 700; color: #ffffff; }
-  .t-resolved-badge { font-size: 12px; font-weight: 700; color: #ffffff; background: #0d3d30; border: 2px solid #00b4a0; padding: 3px 10px; border-radius: 20px; }
+  .t-resolved-badge { font-size: 16px; font-weight: 700; color: #ffffff; background: #0d3d30; border: 2px solid #00b4a0; padding: 3px 10px; border-radius: 20px; }
   .t-back { color: #ffffff; font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; margin-bottom: 8px; opacity: 0.7; transition: opacity 0.2s; }
   .t-back:hover { opacity: 1; }
 
@@ -645,7 +645,7 @@ export default function GamePage() {
                             onClick={() => setChoice(inc.id, resp.id)}
                           >
                             <div className="t-resp-name">{resp.label}</div>
-                            <div style={{ fontSize: 10, opacity: 0.7, marginBottom: 3 }}>{resp.description}</div>
+                            <div style={{ fontSize: 14, opacity: 0.7, marginBottom: 3 }}>{resp.description}</div>
                             <div className="t-resp-meta">
                               <span style={{ color: "#ffaa00" }}>${resp.cost.toLocaleString()}</span>
                               <span style={{ color: "#006699" }}>⏱ {resp.time}</span>
